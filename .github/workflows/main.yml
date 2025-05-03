@@ -61,7 +61,7 @@ jobs:
         name: changing the deployment of git repo
         with:
           repository: 'Chanikyakodati/argocd'
-          token: ${{ secrets.GIT_PASSWORD }}
+          token: ${{ secrets.GIT_PAT }}
       - name: modify the image
         run: |
           git config user.email chanikya.kodati@gmail.com
